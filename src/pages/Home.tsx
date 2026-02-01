@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { Badge, Button, Card, makeStyles, Text, tokens } from '@fluentui/react-components'
+import { Button, Card, makeStyles, Text, tokens } from '@fluentui/react-components'
 
 const useStyles = makeStyles({
   hero: {
@@ -61,11 +61,8 @@ export default function Home() {
   return (
     <div>
       <section className={styles.hero}>
-        <Badge color="brand" size="large">
-          Fluent-designed learning hub
-        </Badge>
         <Text as="h2" size={700} weight="semibold">
-          Speak Gen Alpha with confidence.
+            Speak Gen Alpha with confidence.
         </Text>
         <Text size={400}>
           Dive into the latest vocabulary, study with flashcards, and translate slang in real

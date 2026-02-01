@@ -21,6 +21,9 @@ const useStyles = makeStyles({
     gap: tokens.spacingHorizontalM,
     flexWrap: 'wrap',
   },
+  description: {
+    marginLeft: tokens.spacingHorizontalXS,
+  },
 })
 
 export default function Flashcards() {
@@ -47,7 +50,9 @@ export default function Flashcards() {
         <Text as="h2" size={600} weight="semibold">
           Flashcards
         </Text>
-        <Text size={400}>Tap to reveal the meaning and practice on the go.</Text>
+        <Text size={400} className={styles.description}>
+          Tap to reveal the meaning and practice on the go.
+        </Text>
       </div>
 
       <Card className={styles.card}>

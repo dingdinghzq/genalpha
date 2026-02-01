@@ -38,6 +38,9 @@ const useStyles = makeStyles({
     gap: tokens.spacingVerticalM,
     gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
   },
+  description: {
+    marginLeft: tokens.spacingHorizontalXS,
+  },
 })
 
 const directionOptions: { label: string; value: TranslationDirection }[] = [
@@ -72,7 +75,7 @@ export default function Translator() {
         <Text as="h2" size={600} weight="semibold">
           Translator
         </Text>
-        <Text size={400}>
+        <Text size={400} className={styles.description}>
           Switch directions and translate slang using a live LLM backend (API key required).
         </Text>
       </div>

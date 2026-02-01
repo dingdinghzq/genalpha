@@ -36,6 +36,9 @@ const useStyles = makeStyles({
     gap: tokens.spacingHorizontalM,
     flexWrap: 'wrap',
   },
+  description: {
+    marginLeft: tokens.spacingHorizontalXS,
+  },
 })
 
 function shuffle<T>(items: T[]) {
@@ -83,7 +86,9 @@ export default function Quiz() {
         <Text as="h2" size={600} weight="semibold">
           Quiz
         </Text>
-        <Text size={400}>Check your Gen Alpha knowledge with quick prompts.</Text>
+        <Text size={400} className={styles.description}>
+          Check your Gen Alpha knowledge with quick prompts.
+        </Text>
       </div>
 
       <div className={styles.progress}>

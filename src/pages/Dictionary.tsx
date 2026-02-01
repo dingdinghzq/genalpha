@@ -23,6 +23,9 @@ const useStyles = makeStyles({
     display: 'grid',
     gap: tokens.spacingVerticalXS,
   },
+  description: {
+    marginLeft: tokens.spacingHorizontalXS,
+  },
   tags: {
     display: 'flex',
     gap: tokens.spacingHorizontalXS,
@@ -55,7 +58,7 @@ export default function Dictionary() {
         <Text as="h2" size={600} weight="semibold">
           Dictionary
         </Text>
-        <Text size={400}>
+        <Text size={400} className={styles.description}>
           Search Gen Alpha terms, examples, and tags to keep your vocabulary up to date.
         </Text>
       </div>
