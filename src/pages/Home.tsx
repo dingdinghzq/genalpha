@@ -52,6 +52,11 @@ const features = [
     description: 'Convert Gen Alpha slang to English and back again.',
     link: '/translator',
   },
+  {
+    title: 'Settings',
+    description: 'Store your LLM API key locally to enable live translation.',
+    link: '/settings',
+  },
 ]
 
 export default function Home() {

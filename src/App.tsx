@@ -11,6 +11,7 @@ import {
   HomeRegular,
   NotebookRegular,
   QuizNewRegular,
+  SettingsRegular,
   TranslateRegular,
 } from '@fluentui/react-icons'
 import './App.css'
@@ -18,6 +19,7 @@ import Dictionary from './pages/Dictionary'
 import Flashcards from './pages/Flashcards'
 import Home from './pages/Home'
 import Quiz from './pages/Quiz'
+import Settings from './pages/Settings'
 import Translator from './pages/Translator'
 
 const useStyles = makeStyles({
@@ -145,6 +147,14 @@ function App() {
                 >
                   <TranslateRegular /> Translator
                 </NavLink>
+                <NavLink
+                  to="/settings"
+                  className={({ isActive }) =>
+                    `${styles.navLink} ${isActive ? styles.navLinkActive : ''}`
+                  }
+                >
+                  <SettingsRegular /> Settings
+                </NavLink>
               </nav>
             </div>
           </header>
@@ -156,6 +166,7 @@ function App() {
               <Route path="/flashcards" element={<Flashcards />} />
               <Route path="/quiz" element={<Quiz />} />
               <Route path="/translator" element={<Translator />} />
+              <Route path="/settings" element={<Settings />} />
             </Routes>
           </main>
 
